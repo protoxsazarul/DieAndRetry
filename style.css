@@ -1,0 +1,99 @@
+body{
+    margin :0px;
+    padding: 0px;
+}
+#log{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    bottom: 0px;
+    left:0px;
+}
+.formTab{
+    font-size: 0.7em;
+}
+.login{
+
+    display: flex;
+    flex-direction: column;
+    height: 30%;
+    width: 20%;
+}
+#tab thead{
+     width: 100%;
+}
+#Tab td{
+    border: 1px solid black;
+}
+#scroll{
+    overflow-y: scroll;
+    height: 300px;
+}
+#Gpub,#GHpub, #Gconst, #GHconst{
+    display:none;
+}
+.list{
+    border-bottom:1px solid #888;
+    font-size:0.7em
+}
+#Gname{
+    border-left: 1px solid #888;
+}
+#Gdetail{
+    border-right: 1px solid #888;
+}
+.pad{
+    text-align: center;
+}
+
+/* modal */
+#modal-bg{
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    height: 100%;
+    padding: 1%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.4)
+}
+#modal-corps{
+    background: white;
+    margin: 15% auto;
+    padding: 3%;
+    border: 1px solid #888;
+    border-radius:30px;
+    width: 100%;
+    height: 50%;
+}
+/* debut media queries  */
+
+/* media queries sur ecran moyen */
+@media screen and (min-width: 768px){
+    #Gpub, #GHpub{
+        display: table-cell;
+    }
+    /* modification modal */
+    #modal-corps{
+        width:50%;
+    }
+    #scroll{
+        height: 750px;
+    }
+    .list{
+        font-size:1em;
+    }
+}
+@media screen and (min-width: 980px){
+    #Gconst, #GHconst{
+        display: table-cell;
+    }
+    .list{
+        font-size:1.2em;
+    }
+    .pad{
+        font-size: 1.7em;
+    }
+}
