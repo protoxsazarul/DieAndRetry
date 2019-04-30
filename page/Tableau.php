@@ -4,7 +4,7 @@ include "page/Data.php" ;?>
 <script src="script_java.js"></script>
 <!-- Modal du form d'ajout -->
 <div class="modal fade" id="GameAdd" tabindex="-1" role="dialog" aria-labelledby="GameAddModal" aria-hidden="true">
-    <form action="FormModif.php" method="POST" name="Add">
+    <form action="" method="POST" name="Add">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-header">
